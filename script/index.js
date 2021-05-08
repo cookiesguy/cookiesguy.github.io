@@ -18,6 +18,7 @@ prevBtn.addEventListener("click", () => {
       allPages[choosen].classList.remove("slide-to-right");
       allPages[choosen].classList.add("fade-in");
       allDots[choosen].style.color = "#d63a5f";
+      allDots[1].style.color = "black";
     }, 50);
   } else {
   }
@@ -33,13 +34,12 @@ nextBtn.addEventListener("click", () => {
       allPages[choosen].classList.remove("slide-to-left");
       allPages[choosen].classList.add("fade-in");
       allDots[choosen].style.color = "#d63a5f";
+      allDots[0].style.color = "black";
     }, 50);
   } else {
   }
 });
 
-window.setTimeout(function () {
-  allPages[0].classList.add("fade-in");
-}, 50);
+allPages[0].classList.add("fade-in");
 
 allDots[0].style.color = "#d63a5f";

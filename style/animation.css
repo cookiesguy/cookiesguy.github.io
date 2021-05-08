@@ -1,84 +1,148 @@
 #text {
   width: 600px;
+  animation: fill-text 0.5s ease forwards 3.6s;
 }
-
-#text path:nth-child(2) {
+#text path {
+  stroke: black;
+  stroke-width: 2px;
+}
+#text path:nth-child(1) {
   stroke-dasharray: 518;
   stroke-dashoffset: 518;
   animation: fill-animate 3s ease forwards;
-  stroke: #fff;
+}
+#text path:nth-child(2) {
+  stroke-dasharray: 329;
+  stroke-dashoffset: 329;
+  animation: fill-animate 3s ease forwards 0.3s;
 }
 #text path:nth-child(3) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 0.3s infinite;
-  stroke: #fff;
-}
-#text path:nth-child(4) {
   stroke-dasharray: 391;
   stroke-dashoffset: 391;
-  animation: fill-animate 3s ease forwards 0.6s infinite;
-  stroke: #fff;
+  animation: fill-animate 3s ease forwards 0.6s;
 }
-#text path:nth-child(5) {
+#text path:nth-child(4) {
   stroke-dasharray: 352;
   stroke-dashoffset: 352;
-  animation: fill-animate 3s ease forwards 0.9s infinite;
-  stroke: #fff;
+  animation: fill-animate 3s ease forwards 0.9s;
 }
-#text path:nth-child(6) {
+#text path:nth-child(5) {
   stroke-dasharray: 329;
   stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 1.2s infinite;
-  stroke: #fff;
+  animation: fill-animate 3s ease forwards 1.2s;
 }
 
-#text path:nth-child(7) {
+#text path:nth-child(6) {
   stroke-dasharray: 298;
   stroke-dashoffset: 298;
-  animation: fill-animate 3s ease forwards 1.5s infinite;
-  stroke: #fff;
+  animation: fill-animate 3s ease forwards 1.5s;
 }
-#text path:nth-child(8) {
+#text path:nth-child(7) {
   stroke-dasharray: 329;
   stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 1.8s infinite;
-  stroke: #fff;
+  animation: fill-animate 3s ease forwards 1.8s;
 }
-#text path:nth-child(9) {
+#text path:nth-child(8) {
   stroke-dasharray: 298;
   stroke-dashoffset: 298;
-  animation: fill-animate 3s ease forwards 2.1s infinite;
-  stroke: #fff;
+  animation: fill-animate 3s ease forwards 2.1s;
+}
+#text path:nth-child(9) {
+  stroke-dasharray: 329;
+  stroke-dashoffset: 329;
+  animation: fill-animate 3s ease forwards 2.4s;
 }
 #text path:nth-child(10) {
   stroke-dasharray: 329;
   stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 2.4s;
-  stroke: #fff;
+  animation: fill-animate 3s ease forwards 2.7s;
 }
 #text path:nth-child(11) {
   stroke-dasharray: 329;
   stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 2.7s;
-  stroke: #fff;
+  animation: fill-animate 3s ease forwards 3s;
 }
 #text path:nth-child(12) {
   stroke-dasharray: 329;
   stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 3s;
-  stroke: #fff;
-}
-#text path:nth-child(13) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
   animation: fill-animate 3s ease forwards 3.3s;
-  stroke: #fff;
 }
 
+.square-1 {
+  animation: square-trans 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+.square-2 {
+  animation: square-trans-back 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#svg-image {
+  animation: opacity-ani 2s;
+}
 @keyframes fill-animate {
   to {
     stroke-dashoffset: 0;
-    fill: #fff;
+
+    fill: #3f3d56;
+  }
+}
+
+@keyframes fill-text {
+  to {
+    fill: #3f3d56;
+  }
+}
+
+@keyframes triangle-trans {
+  from {
+    margin-left: -15px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+@keyframes square-trans {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes square-trans-back {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+@keyframes inline-circle-ani {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes opacity-ani {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes line-ani {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }

@@ -5,8 +5,8 @@
 body {
   font-size: 1rem;
   font-family: fira-code;
-  background-color: #27283d;
-  color: white;
+  background-color: #fff;
+  color: black;
   overflow-x: hidden;
 }
 
@@ -52,17 +52,15 @@ li {
 }
 #welcome {
   margin-top: 200px;
-  color: #fff;
 }
 .fas-btn {
-  color: white;
   font-size: 3rem;
   cursor: pointer;
   z-index: 1000;
 }
 .fa-circle {
-  color: white;
   font-size: 2rem;
+  color: black;
 }
 
 #left-btn {
@@ -90,14 +88,17 @@ li {
   justify-content: center;
   height: auto;
 }
-
+.image {
+  margin-top: 100px;
+  margin-left: 40px;
+}
 .slide-to-right {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   height: 0px;
-  margin-left: -2000px;
+  margin-left: -2500px;
 }
 .slide-to-left {
   width: 100%;
@@ -105,7 +106,7 @@ li {
   justify-content: space-evenly;
   flex-wrap: wrap;
   height: 0px;
-  margin-left: 2000px;
+  margin-left: 2500px;
 }
 
 #about {
@@ -142,7 +143,7 @@ li {
 }
 #contact-info > a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 3rem;
   padding: 0px 30px;
 }
@@ -164,22 +165,34 @@ li {
   margin-left: 10px;
 }
 .fa-file-download {
-  color: #27283d;
   margin-left: 10px;
   font-size: 1.5rem;
 }
 
 #cv-download {
-  padding: 10px;
+  padding: 20px;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #27283d;
+  border-radius: 10px;
+  border: #27283d solid;
+  font-weight: bold;
+  transition: all 0.5s;
+  font-size: 15px;
 }
-.svg-div {
-  width: 500px;
+#cv-download:hover {
+  padding: 25px;
+  font-size: 16px;
 }
-#person {
-  width: 650px;
-  margin-top: -950px;
-  margin-left: 30px;
+
+.background {
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+  color: aqua;
 }
