@@ -41,6 +41,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: -90px;
 }
 .about-me {
   display: flex;
@@ -54,12 +55,12 @@ li {
   margin-top: 200px;
 }
 .fas-btn {
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   z-index: 1000;
 }
 .fa-circle {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: black;
 }
 
@@ -144,10 +145,13 @@ li {
 #contact-info > a {
   text-decoration: none;
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 0px 30px;
+  transition: all 0.5s;
 }
-
+#contact-info > a:hover {
+  font-size: 2.5rem;
+}
 #introduce {
   width: 650px;
   font-size: 1rem;
@@ -170,7 +174,7 @@ li {
 }
 
 #cv-download {
-  padding: 20px;
+  padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -182,11 +186,11 @@ li {
   border: #27283d solid;
   font-weight: bold;
   transition: all 0.5s;
-  font-size: 15px;
+  font-size: 11px;
 }
 #cv-download:hover {
-  padding: 25px;
-  font-size: 16px;
+  padding: 15px;
+  font-size: 12px;
 }
 
 .background {

@@ -1,5 +1,5 @@
 #text {
-  width: 600px;
+  width: 400px;
   animation: fill-text 0.5s ease forwards 3.6s;
 }
 #text path {
@@ -79,7 +79,7 @@
   transform-box: fill-box;
 }
 
-#svg-image {
+.container {
   animation: opacity-ani 2s;
 }
 @keyframes fill-animate {
