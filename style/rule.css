@@ -125,51 +125,15 @@ li {
   justify-content: center;
 }
 
-.fa-js {
-  color: yellow;
-  font-size: 1.5rem;
-  margin-left: 10px;
-}
-.fa-html5 {
-  color: orange;
-  font-size: 1.5rem;
-  margin-left: 10px;
-}
-.fa-css3-alt {
-  color: #15aabf;
-  font-size: 1.5rem;
-  margin-left: 10px;
-}
-.fa-node-js {
-  color: green;
-  font-size: 1.5rem;
-  margin-left: 10px;
-}
-.fa-react {
-  color: aqua;
-  font-size: 1.5rem;
-  margin-left: 10px;
-}
-.skill-header {
-  font-weight: bold;
-  color: #69adc0;
-}
 .image-icon {
   margin-left: 10px;
   width: 32px;
 }
-.skill-info {
-  display: flex;
 
-  align-items: center;
-}
 #mid-col {
   padding: 0 100px;
 }
 
-.skill-item {
-  padding-bottom: 20px;
-}
 #contact-info {
   display: flex;
   align-items: center;
@@ -210,4 +174,12 @@ li {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+}
+.svg-div {
+  width: 500px;
+}
+#person {
+  width: 650px;
+  margin-top: -950px;
+  margin-left: 30px;
 }

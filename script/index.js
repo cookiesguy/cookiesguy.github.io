@@ -1,14 +1,12 @@
 let choosen = 0;
 
 const homePage = document.querySelector("#home");
-const aboutPage = document.querySelector("#about");
-const skillPage = document.querySelector("#skill");
-const projectPage = document.querySelector("#project");
+const blogPage = document.querySelector("#blog");
 const prevBtn = document.querySelector("#left-btn");
 const nextBtn = document.querySelector("#right-btn");
 const allDots = document.querySelectorAll(".fa-circle");
 
-const allPages = [homePage, aboutPage, skillPage, projectPage];
+const allPages = [homePage, blogPage];
 
 prevBtn.addEventListener("click", () => {
   if (choosen > 0) {
@@ -26,7 +24,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
-  if (choosen < 3) {
+  if (choosen < 1) {
     allDots[choosen].style.color = "white";
     allPages[choosen].classList.add("slide-to-right");
     allPages[choosen].classList.remove("fade-in");
