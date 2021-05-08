@@ -1,0 +1,213 @@
+@font-face {
+  font-family: fira-code;
+  src: url("../font/FiraCode.ttf");
+}
+body {
+  font-size: 1rem;
+  font-family: fira-code;
+  background-color: #27283d;
+  color: white;
+  overflow-x: hidden;
+}
+
+li {
+  display: inline;
+  margin-right: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-bar {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 2000px;
+  position: absolute;
+}
+.infomation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+}
+
+#main-image {
+  width: 800px;
+}
+#welcome {
+  margin-top: 200px;
+  color: #fff;
+}
+.fas-btn {
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+.fa-circle {
+  color: white;
+  font-size: 2rem;
+}
+
+#left-btn {
+  position: absolute;
+  top: 50%;
+
+  margin-right: 50%;
+}
+#right-btn {
+  position: absolute;
+  top: 50%;
+  margin-left: 95%;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.fade-in {
+  display: flex;
+  margin-left: 0px;
+  transition: margin-left ease-in-out 0.8s;
+
+  justify-content: center;
+  height: auto;
+}
+
+.slide-to-right {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 0px;
+  margin-left: -2000px;
+}
+.slide-to-left {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 0px;
+  margin-left: 2000px;
+}
+
+#about {
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 100px;
+}
+#skill {
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 100px;
+}
+.skill-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fa-js {
+  color: yellow;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.fa-html5 {
+  color: orange;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.fa-css3-alt {
+  color: #15aabf;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.fa-node-js {
+  color: green;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.fa-react {
+  color: aqua;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.skill-header {
+  font-weight: bold;
+  color: #69adc0;
+}
+.image-icon {
+  margin-left: 10px;
+  width: 32px;
+}
+.skill-info {
+  display: flex;
+
+  align-items: center;
+}
+#mid-col {
+  padding: 0 100px;
+}
+
+.skill-item {
+  padding-bottom: 20px;
+}
+#contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+#contact-info > a {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  padding: 0px 30px;
+}
+
+#introduce {
+  width: 650px;
+  font-size: 1rem;
+}
+#personal-info {
+  display: flex;
+  align-items: center;
+}
+#hello-img {
+  width: 300px;
+  margin-right: 50px;
+}
+#github-skill {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.fa-file-download {
+  color: #27283d;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+#cv-download {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
