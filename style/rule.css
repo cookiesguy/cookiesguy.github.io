@@ -5,9 +5,9 @@
 body {
   font-size: 1rem;
   font-family: fira-code;
-  background-color: #fff;
   color: black;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 li {
@@ -16,7 +16,14 @@ li {
   font-weight: bold;
   cursor: pointer;
 }
-
+a {
+  text-decoration: none;
+  color: #27283d;
+}
+.container {
+  background-image: linear-gradient(-140deg, #fff 0%, #f2f2f2 75%);
+  background-repeat: no-repeat;
+}
 .nav-bar {
   padding: 20px;
   display: flex;
@@ -85,13 +92,13 @@ li {
   display: flex;
   margin-left: 0px;
   transition: margin-left ease-in-out 0.8s;
-
+  flex-wrap: wrap;
   justify-content: center;
   height: auto;
 }
 .image {
   margin-top: 100px;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 .slide-to-right {
   width: 100%;
@@ -192,11 +199,30 @@ li {
   padding: 15px;
   font-size: 12px;
 }
-
-.background {
-  position: fixed;
-
-  width: 100vw;
-  height: 100vh;
-  color: aqua;
+#blog {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  align-items: center;
+}
+.topic-image {
+  width: 500px;
+}
+.topic {
+  width: 700px;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+}
+.image-present {
+  width: 100%;
+}
+.topic {
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 80%;
 }
