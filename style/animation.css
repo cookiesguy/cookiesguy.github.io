@@ -72,11 +72,13 @@
   animation: square-trans 2s linear infinite;
   transform-origin: center;
   transform-box: fill-box;
+  fill: #3f3d56;
 }
 .square-2 {
   animation: square-trans-back 2s linear infinite;
   transform-origin: center;
   transform-box: fill-box;
+  fill: #3f3d56;
 }
 
 .container {
