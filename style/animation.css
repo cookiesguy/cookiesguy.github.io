@@ -81,8 +81,8 @@
   fill: #3f3d56;
 }
 
-.container {
-  animation: opacity-ani 2s;
+.web-info {
+  animation: opacity-ani 1.7s;
 }
 @keyframes fill-animate {
   to {

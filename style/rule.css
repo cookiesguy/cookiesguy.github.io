@@ -1,29 +1,67 @@
 @font-face {
-  font-family: fira-code;
-  src: url("../font/FiraCode.ttf");
+  font-family: poppins;
+  src: url("../font/Poppins-Regular.ttf");
 }
 body {
   font-size: 1rem;
-  font-family: fira-code;
-  color: black;
+  font-family: poppins, sans-serif;
+
   height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: #27283d;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
+  text-align: center;
+}
 li {
-  display: inline;
-  margin-right: 100px;
-  font-weight: bold;
-  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
 }
 a {
   text-decoration: none;
   color: #27283d;
+}
+.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .nav-bar {
   padding: 20px;
   display: flex;
   justify-content: center;
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .row {
   width: 100%;
@@ -48,7 +86,7 @@ a {
   width: 800px;
 }
 #welcome {
-  margin-top: 200px;
+  margin-top: 190px;
 }
 .fas-btn {
   font-size: 2rem;
@@ -57,7 +95,7 @@ a {
 }
 .fa-circle {
   font-size: 1.2rem;
-  color: black;
+  color: #27283d;
 }
 
 #left-btn {
@@ -81,7 +119,7 @@ a {
   display: flex;
   margin-left: 0px;
   transition: margin-left ease-in-out 0.8s;
-  flex-wrap: wrap;
+
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -141,7 +179,7 @@ a {
 }
 #contact-info > a {
   text-decoration: none;
-  color: black;
+  color: #27283d;
   font-size: 2rem;
   padding: 0px 30px;
   transition: all 0.5s;
@@ -218,12 +256,15 @@ h1 {
 .web-info {
   display: flex;
   flex-wrap: wrap;
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   align-items: center;
   justify-content: center;
+  padding-bottom: 160px;
 }
 #project {
-  margin-top: 160px;
   padding: 0px 80px;
 }
 .all-project {
@@ -251,4 +292,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+#book-land {
+  margin-right: 30px;
 }
