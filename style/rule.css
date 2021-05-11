@@ -149,8 +149,9 @@ a {
 #blog {
   display: flex;
   flex-direction: column;
-
+  padding: 0 40px;
   align-items: center;
+  padding-bottom: 30px;
 }
 .topic-image {
   width: 500px;

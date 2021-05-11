@@ -34,11 +34,13 @@
   .menu-btn {
     display: flex;
   }
+  #blog {
+    padding: 0px;
+  }
 }
 @media screen and (max-width: 1450px) {
   .header {
     margin-top: -80px;
-    display: nonbe;
   }
   .image {
     margin-top: 10px;
