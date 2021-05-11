@@ -199,7 +199,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
 }
@@ -211,4 +211,27 @@ a {
 }
 #book-land {
   margin-right: 30px;
+}
+.fa-bars {
+  font-size: 1.2rem;
+}
+.menu-btn {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+}
+.side-bar {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  width: 100px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  transform: translateX(-140px);
+  transition: all ease 0.5s;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }

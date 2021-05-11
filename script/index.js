@@ -4,6 +4,9 @@ let documentheight = document.body.clientHeight;
 const projectComponents = document.querySelectorAll(".project-block");
 const svgText = document.querySelector(".svg-text");
 const navLink = document.querySelector(".list");
+const menuButton = document.querySelector(".menu-btn");
+const sideBar = document.querySelector(".side-bar");
+const container = document.querySelector(".container");
 projectComponents[0].style.transform = "translateY(1000px)";
 projectComponents[0].style.opacity = "0";
 
@@ -34,7 +37,19 @@ window.addEventListener("scroll", () => {
     navLink.style.transform = "translateY(-80px)";
   }
 });
+
 window.setTimeout(() => {
   navLink.style.transition = "all ease 0.8s";
   navLink.style.transform = "translateY(0px)";
 }, 50);
+
+menuButton.addEventListener("click", () => {
+  console.log("fired");
+  sideBar.style.transform = "translateX(0px)";
+  container.style.filter = "brightness(50%)";
+});
+
+function closeSideBar() {
+  sideBar.style.transform = "translateX(-140px)";
+  container.style.filter = "brightness(100%)";
+}
