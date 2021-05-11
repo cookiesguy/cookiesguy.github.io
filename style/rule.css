@@ -12,7 +12,10 @@ body {
   box-sizing: border-box;
   color: #27283d;
 }
-
+h1 {
+  width: 100%;
+  text-align: center;
+}
 ul {
   padding: 0;
   list-style: none;
@@ -63,13 +66,6 @@ a {
   background: -webkit-linear-gradient(to right, #eaafc8, #654ea3); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-bottom: 30px;
-}
 
 .infomation {
   display: flex;
@@ -82,44 +78,12 @@ a {
   justify-content: center;
 }
 
-#main-image {
-  width: 800px;
-}
 #welcome {
   margin-top: 190px;
-}
-.fas-btn {
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 1000;
-}
-.fa-circle {
-  font-size: 1.2rem;
-  color: #27283d;
-}
-
-#left-btn {
-  position: fixed;
-  top: 50%;
-
-  margin-left: 20px;
-}
-#right-btn {
-  position: fixed;
-  top: 50%;
-  margin-left: 95%;
-}
-
-.slider {
-  width: 100%;
-  overflow: hidden;
 }
 
 .fade-in {
   display: flex;
-  margin-left: 0px;
-  transition: margin-left ease-in-out 0.8s;
-
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -127,48 +91,14 @@ a {
 .image {
   margin-top: 100px;
   margin-left: 50px;
-}
-.slide-to-right {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  height: 0px;
-  margin-left: -2500px;
-}
-.slide-to-left {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  height: 0px;
-  margin-left: 2500px;
-}
-
-#about {
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 100px;
-}
-#skill {
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 100px;
-}
-.skill-row {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .image-icon {
   margin-left: 10px;
   width: 32px;
-}
-
-#mid-col {
-  padding: 0 100px;
 }
 
 #contact-info {
@@ -187,14 +117,7 @@ a {
 #contact-info > a:hover {
   font-size: 2.5rem;
 }
-#introduce {
-  width: 650px;
-  font-size: 1rem;
-}
-#personal-info {
-  display: flex;
-  align-items: center;
-}
+
 #hello-img {
   width: 300px;
   margin-right: 50px;
@@ -202,10 +125,6 @@ a {
 #github-skill {
   font-size: 1.5rem;
   margin-left: 10px;
-}
-.fa-file-download {
-  margin-left: 10px;
-  font-size: 1.5rem;
 }
 
 #cv-download {
@@ -239,10 +158,7 @@ a {
 .topic {
   width: 700px;
 }
-h1 {
-  width: 100%;
-  text-align: center;
-}
+
 .image-present {
   width: 100%;
 }
@@ -284,7 +200,6 @@ h1 {
   align-items: center;
   margin-bottom: 40px;
   padding: 20px 30px;
-
   box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
 }
 .project-block {

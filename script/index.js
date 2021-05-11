@@ -12,7 +12,6 @@ navLink.style.transform = "translateY(-80px)";
 let yAxis;
 window.addEventListener("scroll", () => {
   yAxis = documentheight - window.pageYOffset;
-  console.log(window.pageYOffset);
   if (yAxis < 600 && yAxis > 200) {
     projectComponents[0].style.transition = "all ease 1.5s";
     projectComponents[0].style.transform = "translateY(0px)";

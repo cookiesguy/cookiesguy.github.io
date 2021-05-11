@@ -1,16 +1,39 @@
-@media only screen and (max-width: 1450px) {
-  .header {
-    margin-top: -80px;
+@media screen and (max-width: 512px) {
+  .svg-image {
+    width: 300px;
+    height: 200px;
   }
-  .image {
-    margin-top: 50px;
+  body {
+    font-size: 0.6rem;
   }
-  #bookland {
-    margin-left: 0px;
+  .svg-text {
+    width: 300px;
+  }
+  .infomation {
+    margin-top: -180px;
+  }
+  .website-image {
+    width: 300px;
+  }
+  .topic-image {
+    width: 300px;
   }
 }
-@media only screen and (max-width: 1316px) {
-  #bookland {
+@media screen and (max-width: 1450px) {
+  .header {
+    margin-top: -80px;
+    display: nonbe;
+  }
+  .image {
+    margin-top: 10px;
     margin-left: 0px;
+  }
+  .web-info {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #book-land {
+    margin-right: 0px;
   }
 }
