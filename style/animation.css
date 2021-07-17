@@ -1,150 +1,159 @@
 .svg-text {
-  width: 400px;
-  animation: fill-text 0.5s ease forwards 3.6s;
+   width: 400px;
+   animation: fill-text 0.5s ease forwards 3.6s;
 }
 .svg-text path {
-  stroke: black;
-  stroke-width: 2px;
+   stroke: black;
+   stroke-width: 2px;
 }
 .svg-text path:nth-child(1) {
-  stroke-dasharray: 518;
-  stroke-dashoffset: 518;
-  animation: fill-animate 3s ease forwards infinite;
+   stroke-dasharray: 518;
+   stroke-dashoffset: 518;
+   animation: fill-animate 3s ease forwards infinite;
 }
 .svg-text path:nth-child(2) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 0.3s infinite;
+   stroke-dasharray: 329;
+   stroke-dashoffset: 329;
+   animation: fill-animate 3s ease forwards 0.3s infinite;
 }
 .svg-text path:nth-child(3) {
-  stroke-dasharray: 391;
-  stroke-dashoffset: 391;
-  animation: fill-animate 3s ease forwards 0.6s infinite;
+   stroke-dasharray: 391;
+   stroke-dashoffset: 391;
+   animation: fill-animate 3s ease forwards 0.6s infinite;
 }
 .svg-text path:nth-child(4) {
-  stroke-dasharray: 352;
-  stroke-dashoffset: 352;
-  animation: fill-animate 3s ease forwards 0.9s infinite;
+   stroke-dasharray: 352;
+   stroke-dashoffset: 352;
+   animation: fill-animate 3s ease forwards 0.9s infinite;
 }
 .svg-text path:nth-child(5) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 1.2s infinite;
+   stroke-dasharray: 329;
+   stroke-dashoffset: 329;
+   animation: fill-animate 3s ease forwards 1.2s infinite;
 }
 
 .svg-text path:nth-child(6) {
-  stroke-dasharray: 298;
-  stroke-dashoffset: 298;
-  animation: fill-animate 3s ease forwards 1.5s infinite;
+   stroke-dasharray: 298;
+   stroke-dashoffset: 298;
+   animation: fill-animate 3s ease forwards 1.5s infinite;
 }
 .svg-text path:nth-child(7) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 1.8s infinite;
+   stroke-dasharray: 329;
+   stroke-dashoffset: 329;
+   animation: fill-animate 3s ease forwards 1.8s infinite;
 }
 .svg-text path:nth-child(8) {
-  stroke-dasharray: 298;
-  stroke-dashoffset: 298;
-  animation: fill-animate 3s ease forwards 2.1s infinite;
+   stroke-dasharray: 298;
+   stroke-dashoffset: 298;
+   animation: fill-animate 3s ease forwards 2.1s infinite;
 }
 .svg-text path:nth-child(9) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 2.4s infinite;
+   stroke-dasharray: 329;
+   stroke-dashoffset: 329;
+   animation: fill-animate 3s ease forwards 2.4s infinite;
 }
 .svg-text path:nth-child(10) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 2.7s infinite;
+   stroke-dasharray: 329;
+   stroke-dashoffset: 329;
+   animation: fill-animate 3s ease forwards 2.7s infinite;
 }
 .svg-text path:nth-child(11) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 3s infinite;
+   stroke-dasharray: 329;
+   stroke-dashoffset: 329;
+   animation: fill-animate 3s ease forwards 3s infinite;
 }
 .svg-text path:nth-child(12) {
-  stroke-dasharray: 329;
-  stroke-dashoffset: 329;
-  animation: fill-animate 3s ease forwards 3.3s infinite;
+   stroke-dasharray: 329;
+   stroke-dashoffset: 329;
+   animation: fill-animate 3s ease forwards 3.3s infinite;
 }
 
 .square-1 {
-  animation: square-trans 2s linear infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-  fill: #3f3d56;
+   animation: square-trans 2s linear infinite;
+   transform-origin: center;
+   transform-box: fill-box;
+   fill: #3f3d56;
 }
 .square-2 {
-  animation: square-trans-back 2s linear infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-  fill: #3f3d56;
+   animation: square-trans-back 2s linear infinite;
+   transform-origin: center;
+   transform-box: fill-box;
+   fill: #3f3d56;
 }
 
 .web-info {
-  animation: opacity-ani 1.7s;
+   animation: opacity-ani 1.7s;
 }
 @keyframes fill-animate {
-  to {
-    stroke-dashoffset: 0;
+   to {
+      stroke-dashoffset: 0;
 
-    fill: #3f3d56;
-  }
+      fill: #3f3d56;
+   }
 }
 
 @keyframes fill-text {
-  to {
-    fill: #3f3d56;
-  }
+   to {
+      fill: #3f3d56;
+   }
 }
 
 @keyframes triangle-trans {
-  from {
-    margin-left: -15px;
-  }
-  to {
-    margin-left: 0px;
-  }
+   from {
+      margin-left: -15px;
+   }
+   to {
+      margin-left: 0px;
+   }
 }
 @keyframes square-trans {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
+   from {
+      transform: rotateZ(0deg);
+   }
+   to {
+      transform: rotateZ(360deg);
+   }
 }
 
 @keyframes square-trans-back {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(-360deg);
-  }
+   from {
+      transform: rotateZ(0deg);
+   }
+   to {
+      transform: rotateZ(-360deg);
+   }
 }
 @keyframes inline-circle-ani {
-  from {
-    transform: translateX(-10%);
-  }
-  to {
-    transform: translateY(0%);
-  }
+   from {
+      transform: translateX(-10%);
+   }
+   to {
+      transform: translateY(0%);
+   }
 }
 
 @keyframes opacity-ani {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
 }
 @keyframes line-ani {
-  from {
-    transform: translateX(-20%);
-  }
-  to {
-    transform: translateX(0%);
-  }
+   from {
+      transform: translateX(-20%);
+   }
+   to {
+      transform: translateX(0%);
+   }
+}
+
+@keyframes hand-point {
+   from {
+      transform: translateX(-30%);
+   }
+   to {
+      transform: translateX(0);
+   }
 }
