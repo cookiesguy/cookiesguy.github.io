@@ -242,20 +242,6 @@ a {
    z-index: 1;
    left: 30px;
 }
-.side-bar {
-   position: fixed;
-   z-index: 3;
-   background-color: white;
-   width: 100px;
-   left: 0px;
-   top: 0px;
-   bottom: 0;
-   transform: translateX(-140px);
-   transition: all ease 0.5s;
-   display: flex;
-   flex-direction: column;
-   padding: 20px;
-}
 #hand-pointer {
    font-size: 3.2rem;
    left: 0;
