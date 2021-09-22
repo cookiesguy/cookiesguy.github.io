@@ -199,7 +199,10 @@ a {
    padding-bottom: 160px;
 }
 #project {
-   padding: 0px 80px;
+   padding: 0px 20px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 .all-project {
    display: flex;
@@ -240,13 +243,13 @@ a {
    left: 30px;
 }
 .side-bar {
-   position: absolute;
-   z-index: 2;
+   position: fixed;
+   z-index: 3;
    background-color: white;
    width: 100px;
-   height: 100vh;
    left: 0px;
    top: 0px;
+   bottom: 0;
    transform: translateX(-140px);
    transition: all ease 0.5s;
    display: flex;
@@ -258,5 +261,15 @@ a {
    left: 0;
    animation: hand-point 1.2s infinite ease-in;
    position: absolute;
+   display: none;
+}
+
+#disable {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 2;
    display: none;
 }
