@@ -9,7 +9,7 @@
    .svg-text {
       width: 300px;
    }
-   .infomation {
+   .information {
       margin-top: -180px;
    }
    .website-image {
@@ -45,10 +45,5 @@
    }
    .web-info {
       padding-bottom: 50px;
-   }
-}
-@media screen and (max-width: 1300px) {
-   #book-land {
-      margin-right: 0px;
    }
 }
