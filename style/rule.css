@@ -35,6 +35,11 @@ a {
    color: #27283d;
 }
 
+#resume-link{
+   text-decoration: none;
+   color: white;
+}
+
 .nav-link {
    text-transform: uppercase;
    text-decoration: none;
