@@ -35,7 +35,7 @@ a {
    color: #27283d;
 }
 
-#resume-link{
+#resume-link {
    text-decoration: none;
    color: white;
 }
@@ -210,6 +210,14 @@ a {
 .website-image {
    width: 350px;
 }
+
+#project {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+}
 .project-item {
    display: flex;
    flex-direction: column;
@@ -222,8 +230,10 @@ a {
 }
 .project-block {
    display: flex;
-   justify-content: space-evenly;
+   gap: 20px;
    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
 }
 
 .fa-bars {
